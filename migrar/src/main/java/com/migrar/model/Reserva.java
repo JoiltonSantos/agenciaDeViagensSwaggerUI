@@ -44,12 +44,18 @@ public class Reserva {
 
 	}
 
-	public Reserva(Long idReserva, LocalDate dataReserva, Cliente cliente, Destino destino) {
+	
+
+	public Reserva(Long idReserva, LocalDate dataReserva, StatusReserva statusReserva, Cliente cliente,
+			Destino destino) {
 		this.idReserva = idReserva;
 		this.dataReserva = dataReserva;
+		this.statusReserva = statusReserva;
 		this.cliente = cliente;
 		this.destino = destino;
 	}
+
+
 
 	public Long getIdReserva() {
 		return idReserva;
